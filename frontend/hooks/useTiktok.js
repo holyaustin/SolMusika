@@ -28,15 +28,15 @@ const useTiktok = (
   const getTiktoks = async () => {
     console.log('fetching')
 
-    const videos = await program.account.videoAccount.all()
-    console.log(videos)
+    //const videos = await program.account.videoAccount.all()
+    //console.log(videos)
 
     // const res = await axios.get(
     //   'https://ipfs.io/ipfs/QmS28E89P3Gz2LZimkKSuJgXGuZEtXG6dhyzxkSbpv6mKU/tiktoks.json',
     // )
     // setTikToks(res.data);
 
-    setTikToks(videos)
+    //setTikToks(videos)
   }
 
   const likeVideo = async index => {

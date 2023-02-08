@@ -11,7 +11,7 @@ export const Signup = ({ signup }) => {
 
   return (
     <div className={style.authContainer}>
-      <h1 className={style.title}>Sign up to use TikTok</h1>
+      <h1 className={style.title}>Sign up to use SolMusika</h1>
       <div className={style.signupForm}>
         <div className={style.inputField}>
           <div className={style.inputTitle}>Username:</div>
@@ -24,7 +24,7 @@ export const Signup = ({ signup }) => {
           </div>
         </div>
         <div className={style.inputField}>
-          <div className={style.inputTitle}>Profile Image:</div>
+          <div className={style.inputTitle}>Profile Image URL:</div>
           <div className={style.inputContainer}>
             <input
               className={style.input}

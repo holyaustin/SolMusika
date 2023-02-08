@@ -1,6 +1,8 @@
 import { useWallet } from '@solana/wallet-adapter-react'
 import MainView from '../components/mainview'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
+import Image from "next/image";
+import logo from "../assets/musicsplash.png";
 
 export default function Home() {
   const { connected } = useWallet()
@@ -11,9 +13,10 @@ export default function Home() {
         <MainView />
       ) : (
         <div className='loginContainer'>
-          <div className='loginTitle'>Log in to TikTok</div>
+        <Image src={logo} alt="logo" className='mic' />
+          <div className='loginTitle'>Log in to SolMusika</div>
           <div className='loginSubTitle'>
-            Manage your account, check notifications, comment on videos, and
+            Manage your account, Upload videos check notifications, comment on videos, and
             more
           </div>
           <WalletMultiButton />
