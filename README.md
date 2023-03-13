@@ -27,3 +27,45 @@ E-mail - holyaustin@yahoo.com
 
 stay connected on twitter @holyaustin
 
+https://www.gstatic.com/webp/gallery3/2.png
+
+
+#[error_code]
+error: cannot find attribute `error` in this scope
+   --> /src/lib.rs:432:3
+    |
+432 | #[error]
+    |   ^^^^^
+
+
+
+error[E0412]: cannot find type `ProgramResult` in this scope
+   --> /src/lib.rs:168:51
+    |
+168 |     pub fn like_video(ctx: Context<LikeVideo>) -> ProgramResult {
+    |                                                   ^^^^^^^^^^^^^ not found in this scope
+    |
+help: consider importing one of these items
+    |
+22  |     use solana_program::entrypoint::ProgramResult;
+    |
+22  |     use solana_program::entrypoint_deprecated::ProgramResult;
+
+        use anchor_lang::solana_program::entrypoint::ProgramResult;
+
+        pub fn start_stuff_off(ctx: Context<StartStuffOff>) -> Result<()> {
+
+
+
+            error[E0107]: missing generics for type alias `anchor_lang::Result`
+  --> /src/lib.rs:28:55
+   |
+28 |     pub fn create_state(ctx: Context<CreateState>) -> Result {
+   |                                                       ^^^^^^ expected 1 generic argument
+   |
+help: add missing generic argument
+   |
+28 |     pub fn create_state(ctx: Context<CreateState>) -> Result<T> {
+   |                                                       ~~~~~~~~~
+ 
+error: could not compile `solpg` due to previous error

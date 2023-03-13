@@ -26,8 +26,10 @@ export const TIKTOK_PROGRAM_ID = new PublicKey(
   : CLUSTER === 'testnet' 
   ? 'BShqBmAsHXUMnc79Z1EHtWywiic5S1FWH2Kd8i35wiwA'
   : CLUSTER === 'devnet'
-        ? 'Az4edEtU6JtghfueC4hS7Fo5fG3evPY5VUt6YbNHmhaN'
+        ? '6EAfcoqx7ouYND6gHER4AwXKA83exMFwHYeMBUY66iNY'
   : ''
 );
+
+//Be8Pm1cu1fpDXkybKpjbAdbbMsgXtPxSGBA2Sc1UcXBU
 
 export const TIKTOK_IDL = tiktok;

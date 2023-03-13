@@ -2,7 +2,7 @@
 seeds = false
 
 [programs.devnet]
-tiktok_clone = "Az4edEtU6JtghfueC4hS7Fo5fG3evPY5VUt6YbNHmhaN"
+tiktok_clone = "6EAfcoqx7ouYND6gHER4AwXKA83exMFwHYeMBUY66iNY"
 
 [programs.localnet]
 tiktok_clone = "Grgf27wBA8E43gzAiMBvh6hoj7SBay24E4b636zgtJ4a"
@@ -14,7 +14,7 @@ url = "https://anchor.projectserum.com"
 cluster = "devnet"
 #cluster = "localnet"
 
-wallet = "~/.config/solana/id.json"
+wallet = "~/.config/solana/MY_KEYPAIR.json" 
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
