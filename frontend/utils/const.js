@@ -29,7 +29,7 @@ export const TIKTOK_PROGRAM_ID = new PublicKey(
         ? '6EAfcoqx7ouYND6gHER4AwXKA83exMFwHYeMBUY66iNY'
   : ''
 );
-
-//Be8Pm1cu1fpDXkybKpjbAdbbMsgXtPxSGBA2Sc1UcXBU
+// 6EAfcoqx7ouYND6gHER4AwXKA83exMFwHYeMBUY66iNY
+// Be8Pm1cu1fpDXkybKpjbAdbbMsgXtPxSGBA2Sc1UcXBU
 
 export const TIKTOK_IDL = tiktok;
